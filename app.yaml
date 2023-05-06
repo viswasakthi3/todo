@@ -1,0 +1,13 @@
+name: app
+region: nyc
+services:
+- environment_slug: python
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: your-github-username/your-repo-name
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: your-app-name
+  routes:
+  - path: /
